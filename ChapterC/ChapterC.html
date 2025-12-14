@@ -1,0 +1,333 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="zh-TW"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;偉誠大冒險：終極試煉&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>:root {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--primary-color: #2c3e50;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--accent-color: #e74c3c;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--bg-color: #f0f2f5;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--card-bg: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: "Microsoft JhengHei", "Heiti TC", sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--bg-color);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>min-height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #333;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--card-bg);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 90%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 600px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 10px 25px rgba(0,0,0,0.1);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>h1 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--primary-color);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.hidden {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* 按鈕樣式 */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.btn {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--primary-color);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 15px 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 50px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: transform 0.2s, box-shadow 0.2s;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 300px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.btn:active {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: scale(0.98);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.option-btn {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #ecf0f1;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #2c3e50;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: left;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 15px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 8px 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 2px solid transparent;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.option-btn:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #dfe6e9;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-color: var(--primary-color);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* 進度條 */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.progress-bar {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #ddd;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.progress {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--accent-color);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 0%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: width 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* 圖片區域 */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.feedback-img {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 200px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-height: 200px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 20px auto;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.question-text {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.3rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.5;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: left;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.result-score {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 3rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--accent-color);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="start-screen"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1&gt;偉誠大冒險&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;準備好接受關於「偉誠」的靈魂拷問了嗎？&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;共 10 道試煉，請謹慎作答。&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="btn" onclick="startGame()"&gt;開始試煉&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="game-screen" class="hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="progress-bar"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="progress" id="progress"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="question-container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="question-text" id="question"&gt;題目載入中...&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div id="options-container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="feedback-screen" class="hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 id="feedback-title"&gt;&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;img id="feedback-image" src="" alt="Feedback" class="feedback-img"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p id="feedback-text"&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="btn" onclick="nextQuestion()"&gt;下一題&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="end-screen" class="hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1&gt;試煉結束&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;您的最終得分：&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="result-score" id="final-score"&gt;0&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p id="final-comment"&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="btn" onclick="location.reload()"&gt;重新挑戰&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// 設定區：對應您的 good.png 和 bad.png</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const imgGood = 'good.png';<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>const imgBad = 'bad.png';<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// 題目資料庫</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const questions = [</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "試煉一：下列哪個名字不是指偉誠寶貝？",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["(A) Wilism", "(B) Wei cheng", "(C) Ology", "(D) Osmine"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>answer: 2 // 0=A, 1=B, 2=C... C是Ology</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "試煉二：偉誠寶貝的星座為何？",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["(A) 雙子座 Gemini", "(B) 處女座 Virgo", "(C) 射手座 Sagittarius", "(D) 水瓶座 Aquarius"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>answer: 0 // A</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "試煉三：偉誠寶貝的血型為何？",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["(A) A-", "(B) A+", "(C) B-", "(D) B+"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>answer: 1 // B選項是 A+</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "試煉四：下列何者不屬於毀滅性的生化武器？",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["(A) 炭疽桿菌", "(B) 沙林毒氣", "(C) 芹菜", "(D) 薏仁"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>answer: 3 // D</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "試煉五：相傳奧樂雞最愛粉嫩的舒肥雞胸肉？",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["(O) 正確", "(X) 錯誤"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>answer: 0 // O</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "試煉六：當您猶豫不決時，偉誠能幫忙一起想、一起分析，出主意但不搶決定，_______仍在您手上！",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["(A) 投票權", "(B) 選擇權", "(C) 否決權", "(D) 主導權"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>answer: 1 // B</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "試煉七：「樹妖」是擁有美麗外表的植物系魔物，性格平易近人、善於社交，深受村民愛戴。",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["(O) 正確", "(X) 錯誤"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>answer: 1 // X</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "試煉八：在神秘之地 (Mystic Land) 的冒險過程中，哪種魔物從未出現過？",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["(A) 蝙蝠", "(B) 走路菇", "(C) 魔狼", "(D) 炎龍"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>answer: 3 // D</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "試煉九：何以形容憨雞與奧樂雞之間那錯綜複雜的關係？",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["(A) 亦敵亦友", "(B) 比翼雙飛", "(C) 手足之情", "(D) 師徒之誼"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>answer: 0 // A</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>q: "試煉十：憨雞與奧樂雞的思想主張分別為何？",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["(A) 烏托邦社會主義、社會達爾文主義", "(B) 社會達爾文主義、烏托邦社會主義", "(C) 自由意志主義、效益主義", "(D) 效益主義、自由意志主義"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>answer: 0 // A</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>let currentQuestion = 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let score = 0;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function startGame() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('start-screen').classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('game-screen').classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>showQuestion();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function showQuestion() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const q = questions[currentQuestion];</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('question').innerText = q.q;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const optionsDiv = document.getElementById('options-container');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>optionsDiv.innerHTML = '';</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// 更新進度條</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const progressPercent = ((currentQuestion) / questions.length) * 100;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('progress').style.width = progressPercent + '%';</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>q.options.forEach((option, index) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const btn = document.createElement('button');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>btn.className = 'option-btn';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>btn.innerText = option;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>btn.onclick = () =&gt; checkAnswer(index);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>optionsDiv.appendChild(btn);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function checkAnswer(selectedIndex) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const correctIndex = questions[currentQuestion].answer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const isCorrect = selectedIndex === correctIndex;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (isCorrect) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>score += 10;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>showFeedback(true);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>showFeedback(false);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function showFeedback(isCorrect) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('game-screen').classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const feedbackScreen = document.getElementById('feedback-screen');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>feedbackScreen.classList.remove('hidden');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>const title = document.getElementById('feedback-title');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const text = document.getElementById('feedback-text');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const img = document.getElementById('feedback-image');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (isCorrect) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>title.innerText = "答對了！";</p>
+<p class="p1"><span class="Apple-converted-space">                </span>title.style.color = "#27ae60";</p>
+<p class="p1"><span class="Apple-converted-space">                </span>text.innerText = "偉誠對您表示讚賞。";</p>
+<p class="p1"><span class="Apple-converted-space">                </span>img.src = imgGood;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>title.innerText = "答錯囉！";</p>
+<p class="p1"><span class="Apple-converted-space">                </span>title.style.color = "#c0392b";</p>
+<p class="p1"><span class="Apple-converted-space">                </span>text.innerText = "再仔細想想，偉誠在看著你。";</p>
+<p class="p1"><span class="Apple-converted-space">                </span>img.src = imgBad;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// 圖片載入失敗時的處理（避免破圖）</p>
+<p class="p1"><span class="Apple-converted-space">            </span>img.onerror = function() {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>this.style.display = 'none';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>};</p>
+<p class="p1"><span class="Apple-converted-space">            </span>img.onload = function() {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>this.style.display = 'block';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>};</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function nextQuestion() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>currentQuestion++;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('feedback-screen').classList.add('hidden');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (currentQuestion &lt; questions.length) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>document.getElementById('game-screen').classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>showQuestion();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>showEndScreen();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function showEndScreen() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('end-screen').classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('final-score').innerText = score + " 分";</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>const comment = document.getElementById('final-comment');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (score === 100) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>comment.innerText = "太神啦！您是偉誠肚子裡的蛔蟲嗎？";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else if (score &gt;= 80) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>comment.innerText = "不錯不錯，您是偉誠認證的好夥伴！";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else if (score &gt;= 60) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>comment.innerText = "勉強及格，請多花點時間關心偉誠。";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>comment.innerText = "...我們建議您重新認識一下偉誠。";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
